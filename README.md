@@ -1,7 +1,7 @@
 # Boilerplate of Node, React, and GraphQL
 
 
-A few steps to set up the boilerplate. Please install packages for server and client side as below.
+A few steps to set up the boilerplate. Please install packages for server and client side as below, and set up the database.
 
 
 ## Server
@@ -16,8 +16,13 @@ Front end uses React.js, and in ./client folder.
 Go to ./client, and `npm install` to install client packages, including `react`, `apollo-boost`, and `react-apollo`.
 
 
+## Database
+The boilerplate uses MongoDB. Create a new file `variables.env` in root folder, add `MONGO_URI=mongodb://localhost/boilerplate-graphql` to it. And create a database `boilerplate-graphql` (name as you want and update MONGO_URI) in your local MongoDB.
+`variables.env` is in .gitignore for security reason.
 
-Go to the project root folder, `npm run dev` to start the project, including frond end React and back end Node.
+
+## Start
+Start your local MongoDB by `mongod` if using local database. Go to the project root folder, `npm run dev` to start the project, including frond end React and back end Node.
 
 
 Front end: http://localhost:3000
